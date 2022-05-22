@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+	<grid>
+    <row lightcolor="#cccccc" darkcolor="#2e3a50">
+      <button text="Tap here to display artist and song title" onTap="currentSong" id="currentSong" />
+    </row>
+
+    <row lightcolor="#cccccc" darkcolor="#161e2c">
+      <button icon="previous" onTap="previous" />
+      <button icon="next" onTap="next" />
+    </row>
+
+    <row lightcolor="#cccccc" darkcolor="#161e2c">
+      <button icon="playpause" onTap="playpause" />
+      <button icon="docclose" onTap="quit" color="red" />
+    </row>
+   
+    <row lightcolor="#cccccc" darkcolor="#161e2c">
+      <button icon="vdown" onTap="volumeDown" />
+      <button icon="vup" onTap="volumeUp" />
+    </row>
+  </grid>
+</layout>

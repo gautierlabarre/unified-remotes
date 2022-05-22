@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+	<grid>
+    <row lightcolor="#cccccc" darkcolor="#161e2c">
+      <button icon="left" onTap="moveScreenLeft"  />
+      <button icon="right" onTap="moveScreenRight" />
+    </row>
+
+    <row lightcolor="#cccccc" darkcolor="#161e2c">
+      <button image="icon-windows.png" onTap="showWindows" scale="native" />
+      <button image="icon-apps.png" onTap="showApps" scale="native" id="apps" />
+    </row>
+
+    <row lightcolor="#cccccc" darkcolor="#161e2c">
+      <button image="icon-move.png" onTap="moveWindow"  scale="native" />
+      <button icon="fullscreen" onTap="fullscreen" />
+    </row>
+
+    <row lightcolor="#cccccc" darkcolor="#161e2c">
+      <button icon="config" onTap="options" id="config"/>
+      <grid visibility="gone" id="gridArrows" lightcolor="#dddddd" darkcolor="#2e3a50">
+        <row>
+          <button icon="arrowup" onTap="moveUp" />
+          <button icon="arrowdown" onTap="moveDown" />
+        </row>
+        <row>
+         <button icon="arrowleft" onTap="moveLeft"/>
+          <button icon="arrowright" onTap="moveRight" />
+        </row>
+        <row>      
+          <button icon="playpause" onTap="enter" />
+        </row>
+      </grid>
+
+      <button icon="docclose" onTap="close" color="red" />
+    </row>
+  </grid>
+</layout>
